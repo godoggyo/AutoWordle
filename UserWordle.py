@@ -1,4 +1,4 @@
-import _wordselect as ws
+import _gamefunc as ws
 
 class UserWordle():
 
@@ -6,4 +6,3 @@ class UserWordle():
 
     def __init__(self) -> None:
         ws.establishWordPool
-        print(word)

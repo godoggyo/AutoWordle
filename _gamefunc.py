@@ -6,6 +6,9 @@ import random
 ### Maybe make am ore complex list using native unix dic ###
 
 word_list = []
+MISS = "X"
+CONTAINS = "-"
+CORRECT = "#"
 
 def establishWordPool():
     if word_list is not Empty:
@@ -19,4 +22,12 @@ def establishWordPool():
 
 
 def selectWord():
-    return random.choice(word_list) 
+    return random.choice(word_list)
+
+### Print functions for game turns ###
+def gameStart():
+    print("You have 5 tries left:")
+    print(MISS + " " + MISS + " " + MISS + " " + MISS + " " + MISS)
+
+def letterCheck(letterList):
+    
