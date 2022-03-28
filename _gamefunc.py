@@ -29,5 +29,13 @@ def gameStart():
     print("You have 5 tries left:")
     print(MISS + " " + MISS + " " + MISS + " " + MISS + " " + MISS)
 
-def letterCheck(letterList):
-    
+def userInput():
+    guess = input("Enter Guess: ")
+    return guess
+
+def letterCheck(letterList, word):
+    for i in range(len(letterList)):
+        if letterList[i] == word[i]:
+            print(CORRECT)
+        else:
+            print(MISS)
